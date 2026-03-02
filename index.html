@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Form</title>
+    <link rel="stylesheet" href="styles.css">
+     
+</head>
+<body>
+    <div class="container">
+        <form id="myForm" autocomplete="off">
+            <h2>Create Your Account</h2>
+            <div class="input-control">
+                <label>First Name <span class="required-color">*</span></label>
+                <input type="text" id="first-name-input" placeholder="Enter First Name" required>
+                <span id="first-name-error" class="hide required-color error-message">Invalid Input</span>
+                <span id="empty-first-name" class= "hide required-color error-message">First Name cannot be empty</span>
+            </div>
+            <div class="input-control">
+                <label>Last Name <span class="required-color">*</span></label>
+                <input type="text" id="last-name-input" placeholder="Enter Last Name" required>
+                <span id="last-name-error" class="hide required-color error-message">Invalid Input</span>
+                <span id="empty-last-name" class= "hide required-color error-message">Last Name cannot be empty</span>
+            </div>
+            <div class="input-control">
+                <label>Email <span class="required-color">*</span></label>
+                <input type="email" id="email" placeholder="Enter Email" required>
+                <span id="email-error" class="hide required-color error-message">Invalid Email</span>
+                <span id="empty-email" class= "hide required-color error-message">Email cannot be empty</span>
+            </div>
+            <div class="input-control">
+                <label>Phone <span class="required-color">*</span></label>
+                <input type="text" id="phone" placeholder="Enter Phone Number" required>
+                <span id="phone-error" class="hide required-color error-message">Phone Number should have 11 digits</span>
+                <span id="empty-phone" class= "hide required-color error-message">Phone Number cannot be empty</span>
+            </div>
+            <div class="input-control">
+                <label>Password <span class="required-color">*</span></label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <span id="password-error" class="hide required-color error-message">Password should have sepcial character, capital alphabet and number </span>
+                <span id="empty-password" class= "hide required-color error-message">Password cannot be empty</span>
+            </div>
+            <div class="input-control">
+                <label> Confirm Password <span class="required-color">*</span></label>
+                <input type="password" id="confirm-password" placeholder="Enter Confirm Password" required>
+                <span id="confirm-password-error" class="hide required-color error-message">Password should be same as previous password </span>
+                <span id="empty-confirm-password" class= "hide required-color error-message">Password cannot be empty</span>
+            </div>
+
+            <button id="submit-button" type="submit">Signup</button>
+
+        </form>
+    </div>
+     <script src="script.js"></script>
+  
+</body>
+</html>
